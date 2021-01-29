@@ -1,7 +1,13 @@
 package web.service;
 
-import web.dao.CarDAO;
+import web.model.Car;
 
-public interface CarService extends CarDAO {
+import java.util.List;
+
+public interface CarService {
+
+    List<Car> createCars();
+
+    List<Car> getCars(Integer count, List<Car> list);
 
 }
